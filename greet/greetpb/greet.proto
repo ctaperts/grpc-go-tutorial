@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package greet;
+option go_package="greetpb";
+
+message Greeting {
+    // comments get added in the generate proto file! struct!
+    string first_name = 1;
+    string last_name = 2;
+}
+
+message GreetWithDeadlineRequest {
+    // Like this struct!
+    Greeting greeting = 1;
+}
+
+message GreetWithDeadlineResponse {
+    // or this struct! check it out in greet.pb.go
+    string result = 1;
+}
+
+service GreetService{
+    // Unary call with deadline interface
+    rpc GreetWithDeadline(GreetWithDeadlineRequest) returns (GreetWithDeadlineResponse) {};
+}
