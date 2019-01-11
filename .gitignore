@@ -1,5 +1,5 @@
-greet_server
-greet_client
+greet_server/greet_server
+greet_client/greet_client
 greet.pb.go
 *.crt
 *.key
