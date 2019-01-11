@@ -16,11 +16,14 @@ client streaming - streaming message to server and one message response back to 
 bi-directional streaming - streaming to server and streaming to client
 `https://grpc.io/docs/guides/concepts.html#bidirectional-streaming-rpc`
 
-## Install grpc/proto
+## Install this repo with grpc/proto
 
-`go get -u google.golang.org/grpc`
-
-`go get -u github.com/golang/protobuf/protoc-gen-go`
+```
+go get github.com/ctaperts/grpc-go-tutorial
+go get -u google.golang.org/grpc
+go get -u github.com/golang/protobuf/protoc-gen-go
+cd $GOPATH/src/github.com/ctaperts
+```
 
 ## Steps to generate setup
 
