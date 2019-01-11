@@ -18,6 +18,11 @@ bi-directional streaming - streaming to server and streaming to client
 
 ## Install this repo with grpc/proto
 
+Download compiled protoc and add to your PATH
+```
+https://github.com/protocolbuffers/protobuf/releases
+```
+
 ```
 go get github.com/ctaperts/grpc-go-tutorial
 go get -u google.golang.org/grpc
